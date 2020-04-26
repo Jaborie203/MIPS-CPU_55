@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj cpu1 -o G:/projects/cpu_temp3/scdatamem.tfi -lib work G:/projects/cpu_temp3//scdatamem.v -module scdatamem -template D:/isefile/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+scdatamem instance_name (
+    .clk(clk), 
+    .wena(wena), 
+    .addr(addr), 
+    .data_in(data_in), 
+    .data_out(data_out)
+    );
+
+

@@ -1,0 +1,4 @@
+verilog work "pcreg.v"
+verilog work "mux32_1.v"
+verilog work "decoder5_32.v"
+verilog work "regfiles.v"

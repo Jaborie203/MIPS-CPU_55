@@ -1,0 +1,232 @@
+# Reading D:/isefile/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# do {cpu_tb.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:19:59 on Jul 21,2016
+# vlog -reportprogress 300 pcreg.v 
+# -- Compiling module pcreg
+# 
+# Top level modules:
+# 	pcreg
+# End time: 02:19:59 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:19:59 on Jul 21,2016
+# vlog -reportprogress 300 mux32_1.v 
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# End time: 02:19:59 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:19:59 on Jul 21,2016
+# vlog -reportprogress 300 multu.v 
+# -- Compiling module multu
+# 
+# Top level modules:
+# 	multu
+# End time: 02:20:00 on Jul 21,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:00 on Jul 21,2016
+# vlog -reportprogress 300 mult.v 
+# -- Compiling module mult
+# 
+# Top level modules:
+# 	mult
+# End time: 02:20:00 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:00 on Jul 21,2016
+# vlog -reportprogress 300 divu.v 
+# -- Compiling module divu
+# 
+# Top level modules:
+# 	divu
+# End time: 02:20:00 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:00 on Jul 21,2016
+# vlog -reportprogress 300 div.v 
+# -- Compiling module div
+# 
+# Top level modules:
+# 	div
+# End time: 02:20:00 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:00 on Jul 21,2016
+# vlog -reportprogress 300 decoder5_32.v 
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# End time: 02:20:00 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:01 on Jul 21,2016
+# vlog -reportprogress 300 sccu_dataflow.v 
+# -- Compiling module sccu_dataflow
+# 
+# Top level modules:
+# 	sccu_dataflow
+# End time: 02:20:01 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:01 on Jul 21,2016
+# vlog -reportprogress 300 regfiles.v 
+# -- Compiling module regfiles
+# 
+# Top level modules:
+# 	regfiles
+# End time: 02:20:01 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:01 on Jul 21,2016
+# vlog -reportprogress 300 pc_reg.v 
+# -- Compiling module pc_reg
+# 
+# Top level modules:
+# 	pc_reg
+# End time: 02:20:01 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:01 on Jul 21,2016
+# vlog -reportprogress 300 mux4c1.v 
+# -- Compiling module mux4c1
+# 
+# Top level modules:
+# 	mux4c1
+# End time: 02:20:01 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:01 on Jul 21,2016
+# vlog -reportprogress 300 mux3c1.v 
+# -- Compiling module mux3c1
+# 
+# Top level modules:
+# 	mux3c1
+# End time: 02:20:02 on Jul 21,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:02 on Jul 21,2016
+# vlog -reportprogress 300 mux2c1.v 
+# -- Compiling module mux2c1
+# 
+# Top level modules:
+# 	mux2c1
+# End time: 02:20:02 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:02 on Jul 21,2016
+# vlog -reportprogress 300 hilo_reg.v 
+# -- Compiling module hilo_reg
+# 
+# Top level modules:
+# 	hilo_reg
+# End time: 02:20:02 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:02 on Jul 21,2016
+# vlog -reportprogress 300 fun.v 
+# -- Compiling module fun
+# 
+# Top level modules:
+# 	fun
+# End time: 02:20:02 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:02 on Jul 21,2016
+# vlog -reportprogress 300 ext.v 
+# -- Compiling module ext
+# 
+# Top level modules:
+# 	ext
+# End time: 02:20:02 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:02 on Jul 21,2016
+# vlog -reportprogress 300 alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 02:20:03 on Jul 21,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:03 on Jul 21,2016
+# vlog -reportprogress 300 scinstmem.v 
+# -- Compiling module scinstmem
+# 
+# Top level modules:
+# 	scinstmem
+# End time: 02:20:03 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:03 on Jul 21,2016
+# vlog -reportprogress 300 scdatamem.v 
+# -- Compiling module scdatamem
+# 
+# Top level modules:
+# 	scdatamem
+# End time: 02:20:03 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:03 on Jul 21,2016
+# vlog -reportprogress 300 sccpu_dataflow.v 
+# -- Compiling module sccpu_dataflow
+# 
+# Top level modules:
+# 	sccpu_dataflow
+# End time: 02:20:03 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:03 on Jul 21,2016
+# vlog -reportprogress 300 sccomp_dataflow.v 
+# -- Compiling module sccomp_dataflow
+# 
+# Top level modules:
+# 	sccomp_dataflow
+# End time: 02:20:03 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:03 on Jul 21,2016
+# vlog -reportprogress 300 cpu_tb.v 
+# -- Compiling module cpu_tb
+# 
+# Top level modules:
+# 	cpu_tb
+# End time: 02:20:04 on Jul 21,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:20:04 on Jul 21,2016
+# vlog -reportprogress 300 D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 02:20:04 on Jul 21,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

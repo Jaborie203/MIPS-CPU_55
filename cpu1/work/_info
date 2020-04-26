@@ -1,0 +1,367 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dG:/projects/cpu_temp4
+valu
+Z0 !s110 1465966566
+!i10b 1
+!s100 HT8fbNXoh<Q;9P<2WSB`n1
+IX^9>2kEQnIXfU540849IW2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dG:/projects/cpu_temp5
+w1462974686
+8alu.v
+Falu.v
+Z3 L0 21
+Z4 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z5 !s108 1465966566.000000
+!s107 alu.v|
+!s90 -reportprogress|300|alu.v|
+!s101 -O0
+!i113 1
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vcpu_tb
+R0
+!i10b 1
+!s100 3I=h5]Ig`f_[kL?Im@Jb<3
+Ib6i6I54_jzQ0F>[BIf@d_0
+R1
+R2
+w1463388455
+8cpu_tb.v
+Fcpu_tb.v
+L0 25
+R4
+r1
+!s85 0
+31
+R5
+!s107 cpu_tb.v|
+!s90 -reportprogress|300|cpu_tb.v|
+!s101 -O0
+!i113 1
+R6
+vdecoder5_32
+Z7 !s110 1465966565
+!i10b 1
+!s100 nVD;7e3b0i[V57<1j^^]B0
+IKEmC3?4ch`[bL_C2Q_1;F1
+R1
+R2
+w1462499037
+8decoder5_32.v
+Fdecoder5_32.v
+R3
+R4
+r1
+!s85 0
+31
+Z8 !s108 1465966565.000000
+!s107 decoder5_32.v|
+!s90 -reportprogress|300|decoder5_32.v|
+!s101 -O0
+!i113 1
+R6
+vext
+R0
+!i10b 1
+!s100 ;M3ZBVOoChao0LJ^i9kaI2
+IX4GUK5MjzL2jjzc^IcXRg1
+R1
+R2
+w1462874412
+8ext.v
+Fext.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ext.v|
+!s90 -reportprogress|300|ext.v|
+!s101 -O0
+!i113 1
+R6
+vglbl
+R0
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+Ik4I<`S?>TI>`Gb2UfB:5=1
+R1
+R2
+w1381681120
+8D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s101 -O0
+!i113 1
+R6
+vmux2c1
+R0
+!i10b 1
+!s100 8SM]PPfTUjQG>AF[23U?b1
+I@J4XKVmW;b43A5m7VACdM2
+R1
+R2
+w1462862947
+8mux2c1.v
+Fmux2c1.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 mux2c1.v|
+!s90 -reportprogress|300|mux2c1.v|
+!s101 -O0
+!i113 1
+R6
+vmux32_1
+R7
+!i10b 1
+!s100 S8Fh3[BGVLC_4JWzz_@e00
+IUcm_dK9CNk60WFOZ=`3R60
+R1
+R2
+w1462888422
+8mux32_1.v
+Fmux32_1.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 mux32_1.v|
+!s90 -reportprogress|300|mux32_1.v|
+!s101 -O0
+!i113 1
+R6
+vmux3c1
+R0
+!i10b 1
+!s100 bk@;oF[?7BjS=KCfCW`eB2
+Idlbb35^2@^8OKL24ka;dS2
+R1
+R2
+w1465316047
+8mux3c1.v
+Fmux3c1.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 mux3c1.v|
+!s90 -reportprogress|300|mux3c1.v|
+!s101 -O0
+!i113 1
+R6
+vmux4c1
+R0
+!i10b 1
+!s100 zCQO_O8dTac6zD4mAlbH^1
+I@]hK0gPi4j]ncAC6gl]Y31
+R1
+R2
+w1462498259
+8mux4c1.v
+Fmux4c1.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 mux4c1.v|
+!s90 -reportprogress|300|mux4c1.v|
+!s101 -O0
+!i113 1
+R6
+vpc_reg
+R7
+!i10b 1
+!s100 10af<^d_TCKP:EPR;Z81a3
+IJGK;5LHgAc0@1Dn2RVD@>2
+R1
+R2
+w1462927498
+8pc_reg.v
+Fpc_reg.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 pc_reg.v|
+!s90 -reportprogress|300|pc_reg.v|
+!s101 -O0
+!i113 1
+R6
+vpcreg
+R7
+!i10b 1
+!s100 RUSDi1e;AO>99mz`X<WRj3
+Il?DM1c4m?Q:[MTiI1JmE91
+R1
+R2
+w1464186200
+8pcreg.v
+Fpcreg.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 pcreg.v|
+!s90 -reportprogress|300|pcreg.v|
+!s101 -O0
+!i113 1
+R6
+vregfiles
+R7
+!i10b 1
+!s100 iBFWo9MNNnALaM:XJiXld0
+I>b1nBb>`F]a[H?G2z>FWC1
+R1
+R2
+w1462497709
+8regfiles.v
+Fregfiles.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 regfiles.v|
+!s90 -reportprogress|300|regfiles.v|
+!s101 -O0
+!i113 1
+R6
+vsccomp_dataflow
+R0
+!i10b 1
+!s100 MVOOZ135X3i@fI@3Pe68W2
+IXG5N5M2l@`[Li4Hjjc=KJ3
+R1
+R2
+w1462980980
+8sccomp_dataflow.v
+Fsccomp_dataflow.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 sccomp_dataflow.v|
+!s90 -reportprogress|300|sccomp_dataflow.v|
+!s101 -O0
+!i113 1
+R6
+vsccpu_dataflow
+R0
+!i10b 1
+!s100 ]SPK67QkVn0bRBUH7Ia901
+Ig6cVNc9;^Z:mUA8<zD2ZE0
+R1
+R2
+w1465318242
+8sccpu_dataflow.v
+Fsccpu_dataflow.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 sccpu_dataflow.v|
+!s90 -reportprogress|300|sccpu_dataflow.v|
+!s101 -O0
+!i113 1
+R6
+vsccu_dataflow
+R7
+!i10b 1
+!s100 Fm5YeP3WJ29k[Mz8W<ZAO0
+IWNTf3g=oQc6b@UAM]TKEE3
+R1
+R2
+w1465319147
+8sccu_dataflow.v
+Fsccu_dataflow.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 sccu_dataflow.v|
+!s90 -reportprogress|300|sccu_dataflow.v|
+!s101 -O0
+!i113 1
+R6
+vscdatamem
+R0
+!i10b 1
+!s100 Bfhb[Uh<_Lkm>Y_P9BY2I2
+IVleLmTdk43oA35Y2ORZMP2
+R1
+R2
+w1463669768
+8scdatamem.v
+Fscdatamem.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 scdatamem.v|
+!s90 -reportprogress|300|scdatamem.v|
+!s101 -O0
+!i113 1
+R6
+vscinstmem
+R0
+!i10b 1
+!s100 `b912=AoFL47U3o8CXHaM0
+IaJJSOY>;0?0I<ZU6zN]n:1
+R1
+R2
+w1462854827
+8scinstmem.v
+Fscinstmem.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 scinstmem.v|
+!s90 -reportprogress|300|scinstmem.v|
+!s101 -O0
+!i113 1
+R6

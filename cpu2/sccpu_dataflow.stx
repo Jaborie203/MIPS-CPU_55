@@ -1,0 +1,90 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to G:/projects/CPU_55/cpu2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Parameter xsthdpdir set to G:/projects/CPU_55/cpu2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Reading design: sccpu_dataflow.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\pcreg.v" into library work
+Parsing module <pcreg>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux32_1.v" into library work
+Parsing module <mux32_1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\multu.v" into library work
+Parsing module <multu>.
+WARNING:HDLCompiler:568 - "G:\projects\CPU_55\cpu2\multu.v" Line 44: Constant value is truncated to fit in <3> bits.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mult.v" into library work
+Parsing module <mult>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\divu.v" into library work
+Parsing module <divu>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\div.v" into library work
+Parsing module <div>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\decoder5_32.v" into library work
+Parsing module <decoder5_32>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\sccu_dataflow.v" into library work
+Parsing module <sccu_dataflow>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\regfiles.v" into library work
+Parsing module <regfiles>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\pc_reg.v" into library work
+Parsing module <pc_reg>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux4c1.v" into library work
+Parsing module <mux4c1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux3c1.v" into library work
+Parsing module <mux3c1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux2c1.v" into library work
+Parsing module <mux2c1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\hilo_reg.v" into library work
+Parsing module <hilo_reg>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\fun.v" into library work
+Parsing module <fun>.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 48: <result> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 49: <result> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 54: <result> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 55: <result> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 60: <r> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 61: <q> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 66: <r> is not declared.
+ERROR:HDLCompiler:69 - "G:\projects\CPU_55\cpu2\fun.v" Line 67: <q> is not declared.
+ERROR:HDLCompiler:598 - "G:\projects\CPU_55\cpu2\fun.v" Line 21: Module <fun> ignored due to previous errors.
+Verilog file G:\projects\CPU_55\cpu2\fun.v ignored due to errors
+--> 
+
+Total memory usage is 222152 kilobytes
+
+Number of errors   :    9 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

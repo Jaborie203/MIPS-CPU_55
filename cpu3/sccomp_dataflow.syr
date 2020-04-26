@@ -1,0 +1,1892 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: sccomp_dataflow.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sccomp_dataflow.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sccomp_dataflow"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : sccomp_dataflow
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\pcreg.v" into library work
+Parsing module <pcreg>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux32_1.v" into library work
+Parsing module <mux32_1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\multu.v" into library work
+Parsing module <multu>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mult.v" into library work
+Parsing module <mult>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\divu.v" into library work
+Parsing module <divu>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\div.v" into library work
+Parsing module <div>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\decoder5_32.v" into library work
+Parsing module <decoder5_32>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\sccu_dataflow.v" into library work
+Parsing module <sccu_dataflow>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\regfiles.v" into library work
+Parsing module <regfiles>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\pc_reg.v" into library work
+Parsing module <pc_reg>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux4c1.v" into library work
+Parsing module <mux4c1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux3c1.v" into library work
+Parsing module <mux3c1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\mux2c1.v" into library work
+Parsing module <mux2c1>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\hilo_reg.v" into library work
+Parsing module <hilo_reg>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\fun.v" into library work
+Parsing module <fun>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\ext.v" into library work
+Parsing module <ext>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\scinstmem.v" into library work
+Parsing module <scinstmem>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\scdatamem.v" into library work
+Parsing module <scdatamem>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" into library work
+Parsing module <sccpu_dataflow>.
+Analyzing Verilog file "G:\projects\CPU_55\cpu2\sccomp_dataflow.v" into library work
+Parsing module <sccomp_dataflow>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sccomp_dataflow>.
+WARNING:HDLCompiler:1016 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 112: Port start is not connected to this instance
+WARNING:HDLCompiler:1016 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 124: Port lo_o is not connected to this instance
+
+Elaborating module <sccpu_dataflow>.
+
+Elaborating module <ext(WIDTH=5)>.
+
+Elaborating module <ext>.
+
+Elaborating module <sccu_dataflow>.
+WARNING:HDLCompiler:189 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 112: Size mismatch in connection of port <h_l>. Formal port size is 1-bit while actual signal size is 2-bit.
+
+Elaborating module <pc_reg>.
+
+Elaborating module <mux2c1(WIDTH=5)>.
+
+Elaborating module <mux4c1>.
+
+Elaborating module <mux2c1>.
+
+Elaborating module <mux3c1>.
+
+Elaborating module <regfiles>.
+
+Elaborating module <decoder5_32>.
+
+Elaborating module <pcreg>.
+
+Elaborating module <mux32_1>.
+
+Elaborating module <fun>.
+
+Elaborating module <multu>.
+WARNING:HDLCompiler:413 - "G:\projects\CPU_55\cpu2\multu.v" Line 56: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <mult>.
+
+Elaborating module <divu>.
+
+Elaborating module <div>.
+WARNING:HDLCompiler:189 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 122: Size mismatch in connection of port <r>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 123: Size mismatch in connection of port <r>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <hilo_reg>.
+WARNING:HDLCompiler:189 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 124: Size mismatch in connection of port <hi_i>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <alu>.
+WARNING:HDLCompiler:1127 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 125: Assignment to c ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" Line 75: Net <hi_o[31]> does not have a driver.
+
+Elaborating module <scinstmem>.
+Reading initialization file \"inst.txt\".
+WARNING:HDLCompiler:1670 - "G:\projects\CPU_55\cpu2\scinstmem.v" Line 29: Signal <ram> in initial block is partially initialized.
+
+Elaborating module <scdatamem>.
+WARNING:HDLCompiler:413 - "G:\projects\CPU_55\cpu2\scdatamem.v" Line 127: Result of 40-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:413 - "G:\projects\CPU_55\cpu2\scdatamem.v" Line 132: Result of 40-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:413 - "G:\projects\CPU_55\cpu2\scdatamem.v" Line 137: Result of 40-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:413 - "G:\projects\CPU_55\cpu2\scdatamem.v" Line 142: Result of 40-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:1127 - "G:\projects\CPU_55\cpu2\scdatamem.v" Line 98: Assignment to temp2 ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sccomp_dataflow>.
+    Related source file is "G:\projects\CPU_55\cpu2\sccomp_dataflow.v".
+    Summary:
+	no macro.
+Unit <sccomp_dataflow> synthesized.
+
+Synthesizing Unit <sccpu_dataflow>.
+    Related source file is "G:\projects\CPU_55\cpu2\sccpu_dataflow.v".
+INFO:Xst:3210 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" line 112: Output port <start> of the instance <cu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" line 124: Output port <lo_o> of the instance <hilo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\projects\CPU_55\cpu2\sccpu_dataflow.v" line 125: Output port <carry> of the instance <alu_unit> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <hi_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32-bit adder for signal <pc_next[31]_GND_2_o_add_19_OUT> created at line 115.
+    Found 32-bit adder for signal <pc_next> created at line 80.
+    Found 32-bit adder for signal <branch_plus> created at line 92.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+Unit <sccpu_dataflow> synthesized.
+
+Synthesizing Unit <ext_1>.
+    Related source file is "G:\projects\CPU_55\cpu2\ext.v".
+        WIDTH = 5
+    Summary:
+	no macro.
+Unit <ext_1> synthesized.
+
+Synthesizing Unit <ext>.
+    Related source file is "G:\projects\CPU_55\cpu2\ext.v".
+        WIDTH = 16
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ext> synthesized.
+
+Synthesizing Unit <sccu_dataflow>.
+    Related source file is "G:\projects\CPU_55\cpu2\sccu_dataflow.v".
+WARNING:Xst:653 - Signal <h_l> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <sccu_dataflow> synthesized.
+
+Synthesizing Unit <pc_reg>.
+    Related source file is "G:\projects\CPU_55\cpu2\pc_reg.v".
+    Found 32-bit register for signal <data_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <pc_reg> synthesized.
+
+Synthesizing Unit <mux2c1_1>.
+    Related source file is "G:\projects\CPU_55\cpu2\mux2c1.v".
+        WIDTH = 5
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2c1_1> synthesized.
+
+Synthesizing Unit <mux4c1>.
+    Related source file is "G:\projects\CPU_55\cpu2\mux4c1.v".
+    Found 32-bit 4-to-1 multiplexer for signal <pc_mux> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux4c1> synthesized.
+
+Synthesizing Unit <mux2c1>.
+    Related source file is "G:\projects\CPU_55\cpu2\mux2c1.v".
+        WIDTH = 32
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2c1> synthesized.
+
+Synthesizing Unit <mux3c1>.
+    Related source file is "G:\projects\CPU_55\cpu2\mux3c1.v".
+        WIDTH = 32
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<31>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<30>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<29>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<28>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<27>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<26>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<25>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<24>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<23>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<22>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<21>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<20>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<19>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<18>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<17>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<16>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<15>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<14>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<13>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<12>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<11>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<10>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<9>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<8>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<7>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<6>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<5>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<4>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<3>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<2>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<1>> created at line 27.
+    Found 1-bit 3-to-1 multiplexer for signal <s[1]_r[31]_wide_mux_0_OUT<0>> created at line 27.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  32 Latch(s).
+	inferred  32 Multiplexer(s).
+Unit <mux3c1> synthesized.
+
+Synthesizing Unit <regfiles>.
+    Related source file is "G:\projects\CPU_55\cpu2\regfiles.v".
+    Summary:
+	no macro.
+Unit <regfiles> synthesized.
+
+Synthesizing Unit <decoder5_32>.
+    Related source file is "G:\projects\CPU_55\cpu2\decoder5_32.v".
+    Found 32x32-bit Read Only RAM for signal <data_in[4]_GND_45_o_wide_mux_1_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <decoder5_32> synthesized.
+
+Synthesizing Unit <pcreg>.
+    Related source file is "G:\projects\CPU_55\cpu2\pcreg.v".
+    Found 32-bit register for signal <data_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <pcreg> synthesized.
+
+Synthesizing Unit <mux32_1>.
+    Related source file is "G:\projects\CPU_55\cpu2\mux32_1.v".
+    Found 32-bit 32-to-1 multiplexer for signal <r> created at line 28.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux32_1> synthesized.
+
+Synthesizing Unit <fun>.
+    Related source file is "G:\projects\CPU_55\cpu2\fun.v".
+    Found 32-bit register for signal <hi_temp>.
+    Found 32-bit register for signal <lo_temp>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit 4-to-1 multiplexer for signal <func[1]_busy_d2_Mux_3_o> created at line 44.
+    Found 32-bit 4-to-1 multiplexer for signal <func[1]_r_d2[31]_wide_mux_4_OUT> created at line 44.
+    Found 32-bit 4-to-1 multiplexer for signal <func[1]_q_d2[31]_wide_mux_5_OUT> created at line 44.
+    Summary:
+	inferred  65 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <fun> synthesized.
+
+Synthesizing Unit <multu>.
+    Related source file is "G:\projects\CPU_55\cpu2\multu.v".
+    Found 5-bit register for signal <count>.
+    Found 1-bit register for signal <busy>.
+    Found 64-bit register for signal <P>.
+    Found 32-bit register for signal <b_reg>.
+    Found 64-bit register for signal <T>.
+    Found 64-bit adder for signal <P[63]_T[63]_add_2_OUT> created at line 51.
+    Found 5-bit adder for signal <count[4]_GND_49_o_add_4_OUT> created at line 56.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 166 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <multu> synthesized.
+
+Synthesizing Unit <mult>.
+    Related source file is "G:\projects\CPU_55\cpu2\mult.v".
+    Found 34-bit adder for signal <n1211[33:0]> created at line 39.
+    Found 36-bit adder for signal <n1214[35:0]> created at line 41.
+    Found 37-bit adder for signal <n1217[36:0]> created at line 39.
+    Found 38-bit adder for signal <n1220[37:0]> created at line 43.
+    Found 40-bit adder for signal <n1223[39:0]> created at line 45.
+    Found 41-bit adder for signal <n1226[40:0]> created at line 43.
+    Found 42-bit adder for signal <n1229[41:0]> created at line 39.
+    Found 42-bit adder for signal <n1232[41:0]> created at line 47.
+    Found 44-bit adder for signal <n1235[43:0]> created at line 49.
+    Found 45-bit adder for signal <n1238[44:0]> created at line 47.
+    Found 46-bit adder for signal <n1241[45:0]> created at line 51.
+    Found 48-bit adder for signal <n1244[47:0]> created at line 53.
+    Found 49-bit adder for signal <n1247[48:0]> created at line 51.
+    Found 50-bit adder for signal <n1250[49:0]> created at line 47.
+    Found 51-bit adder for signal <n1253[50:0]> created at line 39.
+    Found 50-bit adder for signal <n1256[49:0]> created at line 55.
+    Found 52-bit adder for signal <n1259[51:0]> created at line 57.
+    Found 53-bit adder for signal <n1262[52:0]> created at line 55.
+    Found 54-bit adder for signal <n1265[53:0]> created at line 59.
+    Found 56-bit adder for signal <n1268[55:0]> created at line 61.
+    Found 57-bit adder for signal <n1271[56:0]> created at line 59.
+    Found 58-bit adder for signal <n1274[57:0]> created at line 55.
+    Found 58-bit adder for signal <n1277[57:0]> created at line 63.
+    Found 60-bit adder for signal <n1280[59:0]> created at line 65.
+    Found 61-bit adder for signal <n1283[60:0]> created at line 63.
+    Found 62-bit adder for signal <n1286[61:0]> created at line 67.
+    Found 64-bit adder for signal <n1291> created at line 69.
+    Found 64-bit adder for signal <n1294> created at line 67.
+    Found 64-bit adder for signal <n1297> created at line 63.
+    Found 64-bit adder for signal <n1300> created at line 55.
+    Found 64-bit adder for signal <z> created at line 39.
+    Summary:
+	inferred  31 Adder/Subtractor(s).
+Unit <mult> synthesized.
+
+Synthesizing Unit <divu>.
+    Related source file is "G:\projects\CPU_55\cpu2\divu.v".
+    Found 5-bit register for signal <count>.
+    Found 1-bit register for signal <busy>.
+    Found 32-bit register for signal <reg_r>.
+    Found 1-bit register for signal <r_sign>.
+    Found 32-bit register for signal <reg_q>.
+    Found 32-bit register for signal <reg_b>.
+    Found 33-bit subtractor for signal <reg_r[31]_GND_51_o_sub_2_OUT> created at line 31.
+    Found 33-bit adder for signal <reg_r[31]_GND_51_o_add_0_OUT> created at line 31.
+    Found 5-bit adder for signal <count[4]_GND_51_o_add_3_OUT> created at line 55.
+    Found 32-bit adder for signal <reg_r[31]_reg_b[31]_add_19_OUT> created at line 60.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 103 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <divu> synthesized.
+
+Synthesizing Unit <div>.
+    Related source file is "G:\projects\CPU_55\cpu2\div.v".
+    Found 5-bit register for signal <count>.
+    Found 1-bit register for signal <busy>.
+    Found 32-bit register for signal <reg_r>.
+    Found 1-bit register for signal <r_sign>.
+    Found 1-bit register for signal <sign>.
+    Found 32-bit register for signal <reg_q>.
+    Found 32-bit register for signal <reg_b>.
+    Found 33-bit subtractor for signal <reg_r[31]_reg_b[31]_sub_2_OUT> created at line 32.
+    Found 33-bit adder for signal <reg_r[31]_reg_b[31]_add_0_OUT> created at line 32.
+    Found 5-bit adder for signal <count[4]_GND_52_o_add_3_OUT> created at line 58.
+    Found 32-bit adder for signal <reg_r[31]_reg_b[31]_add_19_OUT> created at line 63.
+    Found 32-bit adder for signal <reg_q[31]_GND_52_o_add_22_OUT> created at line 64.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 104 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <div> synthesized.
+
+Synthesizing Unit <hilo_reg>.
+    Related source file is "G:\projects\CPU_55\cpu2\hilo_reg.v".
+WARNING:Xst:647 - Input <h_l> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <lo_o>.
+    Found 32-bit register for signal <hi_o>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <hilo_reg> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "G:\projects\CPU_55\cpu2\alu.v".
+    Found 32-bit subtractor for signal <a[31]_b[31]_sub_8_OUT> created at line 61.
+    Found 32-bit adder for signal <a[31]_b[31]_add_5_OUT> created at line 49.
+    Found 5-bit subtractor for signal <a[31]_GND_54_o_sub_31_OUT<4:0>> created at line 126.
+    Found 5-bit subtractor for signal <GND_54_o_a[31]_sub_26_OUT<4:0>> created at line 119.
+    Found 32-bit shifter arithmetic right for signal <b[31]_a[31]_shift_right_22_OUT> created at line 112
+    Found 32-bit shifter logical left for signal <b[31]_a[31]_shift_left_27_OUT> created at line 120
+    Found 32-bit shifter logical right for signal <b[31]_a[31]_shift_right_32_OUT> created at line 127
+    Found 1-bit 32-to-1 multiplexer for signal <GND_54_o_b[31]_Mux_26_o> created at line 119.
+    Found 1-bit 32-to-1 multiplexer for signal <a[31]_b[31]_Mux_31_o> created at line 126.
+    Found 32-bit 12-to-1 multiplexer for signal <r_temp> created at line 40.
+    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_14_o> created at line 98
+    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_16_o> created at line 104
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  19 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <scinstmem>.
+    Related source file is "G:\projects\CPU_55\cpu2\scinstmem.v".
+WARNING:Xst:2999 - Signal 'ram', unconnected in block 'scinstmem', is tied to its initial value.
+    Found 2048x32-bit single-port Read Only RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <scinstmem> synthesized.
+
+Synthesizing Unit <scdatamem>.
+    Related source file is "G:\projects\CPU_55\cpu2\scdatamem.v".
+    Found 2048x8-bit single-port RAM <Mram_dram3> for signal <dram3>.
+    Found 2048x8-bit single-port RAM <Mram_dram2> for signal <dram2>.
+    Found 2048x8-bit single-port RAM <Mram_dram1> for signal <dram1>.
+    Found 2048x8-bit single-port RAM <Mram_dram0> for signal <dram0>.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 RAM(s).
+	inferred  48 Latch(s).
+	inferred 101 Multiplexer(s).
+Unit <scdatamem> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 2048x32-bit single-port Read Only RAM                 : 1
+ 2048x8-bit single-port RAM                            : 4
+ 32x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 47
+ 32-bit adder                                          : 7
+ 32-bit subtractor                                     : 1
+ 33-bit addsub                                         : 2
+ 34-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 40-bit adder                                          : 1
+ 41-bit adder                                          : 1
+ 42-bit adder                                          : 2
+ 44-bit adder                                          : 1
+ 45-bit adder                                          : 1
+ 46-bit adder                                          : 1
+ 48-bit adder                                          : 1
+ 49-bit adder                                          : 1
+ 5-bit adder                                           : 3
+ 5-bit subtractor                                      : 2
+ 50-bit adder                                          : 2
+ 51-bit adder                                          : 1
+ 52-bit adder                                          : 1
+ 53-bit adder                                          : 1
+ 54-bit adder                                          : 1
+ 56-bit adder                                          : 1
+ 57-bit adder                                          : 1
+ 58-bit adder                                          : 2
+ 60-bit adder                                          : 1
+ 61-bit adder                                          : 1
+ 62-bit adder                                          : 1
+ 64-bit adder                                          : 6
+# Registers                                            : 55
+ 1-bit register                                        : 7
+ 32-bit register                                       : 43
+ 5-bit register                                        : 3
+ 64-bit register                                       : 2
+# Latches                                              : 80
+ 1-bit latch                                           : 80
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 176
+ 1-bit 2-to-1 multiplexer                              : 96
+ 1-bit 3-to-1 multiplexer                              : 32
+ 1-bit 32-to-1 multiplexer                             : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 32-bit 12-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 14
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 2-to-1 multiplexer                              : 3
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 20
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 5
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <mux_hi> is unconnected in block <cpu>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <hi_o_31> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_30> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_29> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_28> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_27> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_26> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_25> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_24> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_23> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_22> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_21> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_20> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_19> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_18> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_17> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_16> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_15> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_14> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_13> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_12> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_11> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_10> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_9> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_8> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_7> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_6> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_5> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_4> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_3> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_2> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hi_o_1> (without init value) has a constant value of 0 in block <hilo>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <decoder5_32>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data_in[4]_GND_45_o_wide_mux_1_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <data_in>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <decoder5_32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <div>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divu>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <divu> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mult>.
+	The following adders/subtractors are grouped into adder tree <Madd_n1253[50:0]1> :
+ 	<Madd_n1211[33:0]> in block <mult>, 	<Madd_n1214[35:0]> in block <mult>, 	<Madd_n1220[37:0]> in block <mult>, 	<Madd_n1223[39:0]> in block <mult>, 	<Madd_n1232[41:0]> in block <mult>, 	<Madd_n1235[43:0]> in block <mult>, 	<Madd_n1241[45:0]> in block <mult>, 	<Madd_n1244[47:0]> in block <mult>.
+	The following adders/subtractors are grouped into adder tree <Madd_n1229[41:0]1> :
+ 	<Madd_n1217[36:0]> in block <mult>, 	<Madd_n1226[40:0]> in block <mult>.
+	The following adders/subtractors are grouped into adder tree <Madd_n1250[49:0]1> :
+ 	<Madd_n1238[44:0]> in block <mult>, 	<Madd_n1247[48:0]> in block <mult>.
+	The following adders/subtractors are grouped into adder tree <Madd_n1274[57:0]1> :
+ 	<Madd_n1256[49:0]> in block <mult>, 	<Madd_n1259[51:0]> in block <mult>, 	<Madd_n1265[53:0]> in block <mult>, 	<Madd_n1268[55:0]> in block <mult>.
+	The following adders/subtractors are grouped into adder tree <Madd_n1283[60:0]1> :
+ 	<Madd_n1277[57:0]> in block <mult>, 	<Madd_n1280[59:0]> in block <mult>.
+Unit <mult> synthesized (advanced).
+
+Synthesizing (advanced) Unit <multu>.
+The following registers are absorbed into accumulator <P>: 1 register on signal <P>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <multu> synthesized (advanced).
+
+Synthesizing (advanced) Unit <scdatamem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dram3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr<12:2>>    |          |
+    |     diA            | connected to signal <_n0271>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dram2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr<12:2>>    |          |
+    |     diA            | connected to signal <_n0283>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dram1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr<12:2>>    |          |
+    |     diA            | connected to signal <_n0295>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dram0> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr<12:2>>    |          |
+    |     diA            | connected to signal <_n0303>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <scdatamem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <scinstmem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 32-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <scinstmem> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 2048x32-bit single-port distributed Read Only RAM     : 1
+ 2048x8-bit single-port distributed RAM                : 4
+ 32x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 18
+ 32-bit adder                                          : 7
+ 32-bit subtractor                                     : 1
+ 33-bit addsub                                         : 2
+ 5-bit subtractor                                      : 2
+ 62-bit adder                                          : 1
+ 64-bit adder                                          : 5
+# Adder Trees                                          : 3
+ 51-bit / 16-inputs adder tree                         : 1
+ 58-bit / 8-inputs adder tree                          : 1
+ 61-bit / 4-inputs adder tree                          : 1
+# Counters                                             : 3
+ 5-bit up counter                                      : 3
+# Accumulators                                         : 1
+ 64-bit up accumulator                                 : 1
+# Registers                                            : 1447
+ Flip-Flops                                            : 1447
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 205
+ 1-bit 2-to-1 multiplexer                              : 128
+ 1-bit 3-to-1 multiplexer                              : 32
+ 1-bit 32-to-1 multiplexer                             : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 32-bit 12-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 13
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 20
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 5
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <hi_o_1> in Unit <hilo_reg> is equivalent to the following 30 FFs/Latches, which will be removed : <hi_o_2> <hi_o_3> <hi_o_4> <hi_o_5> <hi_o_6> <hi_o_7> <hi_o_8> <hi_o_9> <hi_o_10> <hi_o_11> <hi_o_12> <hi_o_13> <hi_o_14> <hi_o_15> <hi_o_16> <hi_o_17> <hi_o_18> <hi_o_19> <hi_o_20> <hi_o_21> <hi_o_22> <hi_o_23> <hi_o_24> <hi_o_25> <hi_o_26> <hi_o_27> <hi_o_28> <hi_o_29> <hi_o_30> <hi_o_31> 
+WARNING:Xst:1710 - FF/Latch <hi_o_1> (without init value) has a constant value of 0 in block <hilo_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <hilo> of block <hilo_reg> are unconnected in block <sccpu_dataflow>. Underlying logic will be removed.
+
+Optimizing unit <pc_reg> ...
+
+Optimizing unit <sccomp_dataflow> ...
+
+Optimizing unit <sccpu_dataflow> ...
+
+Optimizing unit <regfiles> ...
+
+Optimizing unit <fun> ...
+
+Optimizing unit <multu> ...
+
+Optimizing unit <mult> ...
+
+Optimizing unit <divu> ...
+
+Optimizing unit <div> ...
+
+Optimizing unit <sccu_dataflow> ...
+
+Optimizing unit <mux3c1> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <scdatamem> ...
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_23> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_24> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_25> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_26> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_27> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_29> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_30> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_28> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_0> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_1> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_3> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_4> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_2> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_5> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_6> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_8> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_9> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_7> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_10> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_11> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_12> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_13> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_14> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/temp1_15> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_31> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_1> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_2> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_0> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_3> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_4> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_5> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_6> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_7> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_8> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_10> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_11> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_9> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_12> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_13> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_15> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_16> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_14> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_17> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_18> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_20> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_21> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_19> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dmem/data_out_22> (without init value) has a constant value of 0 in block <sccomp_dataflow>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <cpu/f/busy> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/lo_temp_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/hi_temp_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_63> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_62> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_61> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_60> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_59> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_58> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_57> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_56> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_55> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_54> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_53> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_52> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_51> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_50> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_49> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_48> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_47> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_46> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_45> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_44> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_43> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_42> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_41> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_40> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_39> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_38> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_37> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_36> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_35> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_34> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_33> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_32> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/P_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/count_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/count_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/count_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/count_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/count_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_63> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_62> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_61> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_60> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_59> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_58> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_57> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_56> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_55> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_54> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_53> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_52> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_51> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_50> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_49> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_48> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_47> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_46> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_45> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_44> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_43> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_42> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_41> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_40> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_39> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_38> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_37> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_36> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_35> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_34> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_33> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_32> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/T_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/b_reg_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/m1/busy> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/count_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/count_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/count_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/count_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/count_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_r_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/r_sign> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_q_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/reg_b_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d1/busy> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/count_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/count_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/count_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/count_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/count_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/sign> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_r_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_q_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/r_sign> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/busy> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_31> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_30> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_29> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_28> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_27> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_26> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_25> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_24> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_23> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_22> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_21> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_20> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_19> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_18> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_17> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_16> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_15> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_14> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_13> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_12> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_11> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_10> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_9> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_8> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_7> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_6> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_5> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_4> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_3> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_2> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_1> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:2677 - Node <cpu/f/d2/reg_b_0> of sequential type is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram03> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram04> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram02> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram01> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram07> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram08> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram06> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram05> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram011> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram012> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram010> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram09> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram015> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram016> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram014> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram013> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram027> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram028> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram026> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram025> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram031> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram032> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram030> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram029> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram035> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram036> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram034> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram033> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram039> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram040> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram038> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram037> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram019> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram020> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram018> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram017> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram023> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram024> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram022> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram021> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram043> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram044> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram042> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram041> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram047> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram048> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram046> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram045> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram051> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram052> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram050> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram049> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram055> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram056> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram054> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram053> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram13> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram14> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram12> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram11> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram17> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram18> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram16> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram15> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram23> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram24> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram22> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram21> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram27> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram28> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram26> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram25> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram33> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram34> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram32> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram31> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram37> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram38> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram36> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram35> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram111> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram112> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram110> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram19> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram115> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram116> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram114> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram113> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram211> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram212> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram210> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram29> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram215> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram216> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram214> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram213> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram311> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram312> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram310> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram39> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram315> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram316> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram314> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram313> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram059> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram060> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram058> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram057> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram063> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram064> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram062> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram061> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram119> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram120> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram118> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram117> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram123> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram124> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram122> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram121> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram219> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram220> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram218> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram217> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram223> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram224> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram222> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram221> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram319> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram320> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram318> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram317> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram323> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram324> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram322> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram321> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram127> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram128> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram126> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram125> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram131> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram132> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram130> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram129> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram227> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram228> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram226> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram225> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram231> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram232> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram230> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram229> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram327> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram328> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram326> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram325> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram331> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram332> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram330> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram329> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram135> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram136> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram134> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram133> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram139> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram140> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram138> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram137> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram235> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram236> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram234> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram233> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram239> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram240> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram238> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram237> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram335> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram336> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram334> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram333> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram339> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram340> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram338> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram337> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram143> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram144> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram142> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram141> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram147> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram148> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram146> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram145> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram243> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram244> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram242> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram241> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram247> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram248> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram246> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram245> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram343> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram344> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram342> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram341> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram347> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram348> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram346> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram345> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram151> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram152> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram150> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram149> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram155> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram156> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram154> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram153> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram251> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram252> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram250> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram249> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram255> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram256> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram254> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram253> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram351> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram352> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram350> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram349> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram355> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram356> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram354> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram353> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram159> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram160> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram158> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram157> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram163> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram164> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram162> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram161> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram259> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram260> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram258> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram257> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram263> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram264> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram262> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram261> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram359> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram360> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram358> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram357> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram363> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram364> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram362> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <dmem/Mram_dram361> is unconnected in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_0> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_1> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_2> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_3> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_4> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_5> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_6> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_7> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_8> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_9> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_10> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_11> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_12> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_13> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_14> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_15> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_16> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_17> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_18> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_19> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_20> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_21> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_22> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_23> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_24> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_25> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_26> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_27> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_28> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_29> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_30> is equivalent to a wire in block <sccomp_dataflow>.
+WARNING:Xst:1294 - Latch <cpu/mux_alu_b/r_31> is equivalent to a wire in block <sccomp_dataflow>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sccomp_dataflow, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sccomp_dataflow.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5856
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 59
+#      LUT2                        : 908
+#      LUT3                        : 1296
+#      LUT4                        : 791
+#      LUT5                        : 275
+#      LUT6                        : 974
+#      MUXCY                       : 737
+#      MUXF7                       : 79
+#      VCC                         : 1
+#      XORCY                       : 734
+# FlipFlops/Latches                : 1056
+#      FDCE                        : 32
+#      FDCE_1                      : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 129
+#      IBUF                        : 1
+#      OBUF                        : 128
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1056  out of  126800     0%  
+ Number of Slice LUTs:                 4304  out of  63400     6%  
+    Number used as Logic:              4304  out of  63400     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4311
+   Number with an unused Flip Flop:    3255  out of   4311    75%  
+   Number with an unused LUT:             7  out of   4311     0%  
+   Number of fully used LUT-FF pairs:  1049  out of   4311    24%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                         130
+ Number of bonded IOBs:                 130  out of    210    61%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 1056  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 14.388ns (Maximum Frequency: 69.502MHz)
+   Minimum input arrival time before clock: 0.824ns
+   Maximum output required time after clock: 7.073ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 14.388ns (frequency: 69.502MHz)
+  Total number of paths / destination ports: 163304435 / 2112
+-------------------------------------------------------------------------
+Delay:               7.194ns (Levels of Logic = 14)
+  Source:            cpu/pc/data_out_7 (FF)
+  Destination:       cpu/rf/p0/data_out_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock falling
+
+  Data Path: cpu/pc/data_out_7 to cpu/rf/p0/data_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            45   0.361   0.802  cpu/pc/data_out_7 (cpu/pc/data_out_7)
+     LUT6:I0->O            1   0.097   0.295  imem/Mram_ram33111 (imem/Mram_ram3311)
+     LUT6:I5->O            1   0.097   0.295  imem/Mram_ram33112 (imem/Mram_ram33111)
+     LUT6:I5->O          258   0.097   0.437  imem/Mram_ram33116 (inst_16_OBUF)
+     LUT6:I5->O            1   0.097   0.556  cpu/rf/mu32_1_2/Mmux_r_861 (cpu/rf/mu32_1_2/Mmux_r_861)
+     LUT6:I2->O            1   0.097   0.000  cpu/rf/mu32_1_2/Mmux_r_320 (cpu/rf/mu32_1_2/Mmux_r_320)
+     MUXF7:I1->O          44   0.279   0.404  cpu/rf/mu32_1_2/Mmux_r_2_f7_19 (dmemdata<28>)
+     LUT3:I2->O           11   0.097   0.557  cpu/mux_alu_b/Mmux_s[1]_r[31]_wide_mux_0_OUT<28>11 (cpu/aluimm_mux<28>)
+     LUT6:I3->O            6   0.097   0.579  cpu/alu_unit/Sh2201 (cpu/alu_unit/Sh220)
+     LUT6:I2->O            2   0.097   0.299  cpu/alu_unit/Sh2401 (cpu/alu_unit/Sh240)
+     LUT6:I5->O            1   0.097   0.000  cpu/alu_unit/Mmux_r_temp_817_F (N204)
+     MUXF7:I0->O           1   0.277   0.295  cpu/alu_unit/Mmux_r_temp_817 (cpu/alu_unit/Mmux_r_temp_8)
+     LUT3:I2->O            1   0.097   0.000  cpu/alu_unit/aluc<3>1_G (N229)
+     MUXF7:I1->O          33   0.279   0.402  cpu/alu_unit/aluc<3>1 (aluout_0_OBUF)
+     LUT3:I2->O            1   0.097   0.000  cpu/rf/p31/data_out_0_dpot (cpu/rf/p31/data_out_0_dpot)
+     FDCE_1:D                  0.008          cpu/rf/p31/data_out_0
+    ----------------------------------------
+    Total                      7.194ns (2.271ns logic, 4.924ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 1024 / 1024
+-------------------------------------------------------------------------
+Offset:              0.824ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       cpu/pc/data_out_31 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to cpu/pc/data_out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1024   0.001   0.474  reset_IBUF (reset_IBUF)
+     FDCE:CLR                  0.349          cpu/pc/data_out_0
+    ----------------------------------------
+    Total                      0.824ns (0.350ns logic, 0.474ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 2556889 / 91
+-------------------------------------------------------------------------
+Offset:              7.073ns (Levels of Logic = 14)
+  Source:            cpu/pc/data_out_7 (FF)
+  Destination:       aluout<0> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: cpu/pc/data_out_7 to aluout<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            45   0.361   0.802  cpu/pc/data_out_7 (cpu/pc/data_out_7)
+     LUT6:I0->O            1   0.097   0.295  imem/Mram_ram33111 (imem/Mram_ram3311)
+     LUT6:I5->O            1   0.097   0.295  imem/Mram_ram33112 (imem/Mram_ram33111)
+     LUT6:I5->O          258   0.097   0.437  imem/Mram_ram33116 (inst_16_OBUF)
+     LUT6:I5->O            1   0.097   0.556  cpu/rf/mu32_1_2/Mmux_r_861 (cpu/rf/mu32_1_2/Mmux_r_861)
+     LUT6:I2->O            1   0.097   0.000  cpu/rf/mu32_1_2/Mmux_r_320 (cpu/rf/mu32_1_2/Mmux_r_320)
+     MUXF7:I1->O          44   0.279   0.404  cpu/rf/mu32_1_2/Mmux_r_2_f7_19 (dmemdata<28>)
+     LUT3:I2->O           11   0.097   0.557  cpu/mux_alu_b/Mmux_s[1]_r[31]_wide_mux_0_OUT<28>11 (cpu/aluimm_mux<28>)
+     LUT6:I3->O            6   0.097   0.579  cpu/alu_unit/Sh2201 (cpu/alu_unit/Sh220)
+     LUT6:I2->O            2   0.097   0.299  cpu/alu_unit/Sh2401 (cpu/alu_unit/Sh240)
+     LUT6:I5->O            1   0.097   0.000  cpu/alu_unit/Mmux_r_temp_817_F (N204)
+     MUXF7:I0->O           1   0.277   0.295  cpu/alu_unit/Mmux_r_temp_817 (cpu/alu_unit/Mmux_r_temp_8)
+     LUT3:I2->O            1   0.097   0.000  cpu/alu_unit/aluc<3>1_G (N229)
+     MUXF7:I1->O          33   0.279   0.386  cpu/alu_unit/aluc<3>1 (aluout_0_OBUF)
+     OBUF:I->O                 0.000          aluout_0_OBUF (aluout<0>)
+    ----------------------------------------
+    Total                      7.073ns (2.166ns logic, 4.908ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    3.716|    2.611|    7.194|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 118.00 secs
+Total CPU time to Xst completion: 118.41 secs
+ 
+--> 
+
+Total memory usage is 311580 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  907 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

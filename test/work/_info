@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/projects/CPU_55/test
+vglbl
+Z1 !s110 1469003688
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+Ik4I<`S?>TI>`Gb2UfB:5=1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1469003688.000000
+!s107 D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/isefile/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s101 -O0
+!i113 1
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vtest
+R1
+!i10b 1
+!s100 2@_eFLALgm[<z_41LKe9j1
+IW:`2M5L41bTL3zHebR^B]1
+R2
+R0
+w1469003665
+8test.v
+Ftest.v
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+!s107 test.v|
+!s90 -reportprogress|300|test.v|
+!s101 -O0
+!i113 1
+R5
+vtest_tb
+R1
+!i10b 1
+!s100 B]4M3zZ>4Q2H3B=X`<`4A2
+IVVFJK94MAZ<JjYlan2eRz3
+R2
+R0
+w1469003560
+8test_tb.v
+Ftest_tb.v
+L0 25
+R3
+r1
+!s85 0
+31
+R4
+!s107 test_tb.v|
+!s90 -reportprogress|300|test_tb.v|
+!s101 -O0
+!i113 1
+R5
